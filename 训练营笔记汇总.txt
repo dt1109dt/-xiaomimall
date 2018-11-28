@@ -1,0 +1,877 @@
+day1********************************
+魏军军   18511085150
+河南大学计算机应用专业
+上课时间：
+	上午：9：30-12：00
+	下午：2：30-5：30
+	周一 - 周六
+
+
+web前端：页面（html+css+js）
+
+java（php）：数据交互（html+css+jquery）
+
+软件训练营：html+css(写静态页面)
+
+
+一、html语言：超文本标记语言
+	      以.html或者.htm结尾的文件
+
+
+二、html的语法：
+	1、注释:给代码写批注
+	   写法：<!--注释的内容写到中间-->
+	
+	2、标记的分类：
+		单标记（非封闭类型标记）：
+		写法：<开始标记>
+
+		双标记（封闭类型标记）：
+		写法：<开始标记>内容写中间</结束标记>
+		
+		注意：1.嵌套完整
+		      2.书写规范
+
+	3、属性和值：修饰标记或者标记里的内容
+	       写法：
+		1.只能写在开始标记里
+		2.跟开始标记隔开空格
+		3.属性="值"
+		4.多对属性的写法：
+		<开始标记 属性="值" 属性="值">
+			内容
+		</结束标记>
+
+	4、四大基础属性：
+		1.id：取唯一的别名（身份证号）
+		2.class：取重复的别名（姓名）
+		  注意：
+			1、不能出现中文
+			2、首字母必须是英文
+		3.title：给标记加提示
+		4.style：给标记加样式的
+		style="样式统称:样式的值;样式统称:样式的值;"
+		
+三、标记
+	1.文本样式标记：
+		<b>加粗</b>
+		<u>下划线</u>
+		<s>删除</s>
+		<i>倾斜</i>
+		<sup>上标</sup>
+		<sub>下标</sub>
+	2.特殊符号：
+		&nbsp;  代表一个空格
+		&lt;    代表左尖括号
+		&gt;    代表右尖括号
+		&copy;  代表圈+c
+		&reg;   代表圈+R
+
+换行:<br>
+
+
+
+
+day2********************************
+一、标记
+     1、标题元素
+	<h1></h1>
+	<h2></h2>
+	<h3></h3>
+	<h4></h4>
+	<h5></h5>
+	<h6></h6>
+	特点：
+	1、字号由一级到六级，由大到小
+	2、字体都加粗
+	3、有竖直方向的垂直空白间距
+	4、标记的内容可以独自占一行显示
+
+	属性：
+	align：设置文本在水平方向上的对齐方式
+	值：left（左） center（中） right（右）
+
+     2、段落元素
+	<p></p>
+	特点：
+	1.有竖直方向的垂直空白间距
+	2.标记的内容可以独自占一块区域显示
+
+	属性：
+	align：设置文本在水平方向上的对齐方式
+	值：left（左） center（中） right（右）
+
+     3、水平分割线
+	<hr>
+	
+	属性：
+	1.size：设置水平分割线的高度，
+		值是数字，单位px
+	2.width：设置水平分割线的宽度，
+		值是数字，单位px或者%
+	3.color：颜色
+	4.align：对齐方式
+	     值：left（左） center（中） right（右）
+
+     4、预格式化：保留源文档的格式
+		 （空格或者换行）
+	<pre></pre>
+	
+	属性：align
+	值：left(左)  center(中)  right(右)
+
+     5、块分区元素：
+	<div></div>
+
+	属性：align
+	值：left  center  right
+	
+     6、行分区元素:
+	<span></span>
+
+
+     总结：
+	行内元素：标记的内容写出来
+		  在一个区域显示
+	span,b,u,s,i,sup,sub
+
+
+	块元素：标记的内容写出来独自
+		占一块区域显示，都具
+		有align的属性
+	h1,h2,h3,h4,h5,h6,p,hr,pre,div
+	
+     7、图像
+	<img>
+
+	属性：
+	1.src：写路径的
+	2.width：设置图片的宽度，值是数字，
+		  单位px
+	3.height：设置图片的高度，值是数字，
+		  单位px
+	  注意：改图片的宽高的时候，只需要改
+	        其中一个值，另外一个值会跟着
+	        等比例的缩放
+
+	4.alt：当图像加载失败的时候，给用户
+	       一个提示
+	
+     8、超链接：
+	<a></a>
+
+	属性：
+	1.href：写路径的
+
+
+
+
+day3********************************
+一、超链接
+	<a></a>
+
+	属性：
+	1、href：路径
+		值：#
+
+		锚点：#+id的值
+
+	2、target：设置打开新窗口的方式
+		值：
+		1. _self:在当前窗口打开
+		2. _blank:在新的窗口打开
+
+二、表格:行包括几个单元格，列不能包括行
+	<table>
+		<tr>
+			<td>单元格</td>
+		</tr>
+	</table>
+
+	table的属性：
+	   1.border：设置表格的边框，值是数字，
+		  没有单位
+	   2.width： 设置表格的宽度，值是数字，
+		  单位是px
+	   3.height：设置表格的高度，值是数字，
+		  单位是px
+	   4.bgcolor：设置表格的背景颜色
+	   5.align：设置表格的对齐方式
+	     值：left  center  right
+	   6.cellspacing：设置单元格与单元格之间的间距，
+		       值是数字，单位px
+	   7.cellpadding：设置单元格内容与边框线之间的距离，
+		       值是数字，单位px
+
+	tr的属性：
+	   1.align：left   center   right
+	   2.valign:设置行标记里的内容在
+		    竖直方向上的对齐方式
+		 值：top(上)   middle(中) 
+		     bottom(下)
+	   3.bgcolor:设置行的背景颜色
+	 
+	td的属性：
+	   1.width：设置单元格的宽度，
+		    值是数字，单位px
+	   2.height：设置单元格的高度，
+		     值是数字，单位px
+	   3.bgcolor：设置单元格的背景颜色
+	   4.align：设置单元格的水平对齐方式
+	   5.valign：设置单元格的竖直对齐方式
+		     top   middle  bottom
+	   6.colspan：跨列合并，值是数字，
+		      没有单位，跨几列值就是几
+
+	   7.rowspan：跨行合并，值是数字，
+		      没有单位，跨几行值就是几
+		 
+三、列表：列表类型和列表项
+	1.有序列表
+		<ol>
+			<li></li>
+		</ol>
+
+		ol的属性：
+		1.type：
+		    值:
+			1.  1
+			2.a
+			3.A
+			4.i
+			5.I
+
+		2.start:值是数字，
+		没有单位,定义列表的编号
+		从几开始
+			
+	2.无序列表
+		<ul>
+			<li></li>
+		</ul>
+
+		ul的属性：
+		type：
+		    值：
+			1.disc：实心圆点
+			2.circle：句号
+			3.square：实心正方形
+			4.none：空
+	3.自定义列表
+
+
+
+
+day4********************************
+一、列表：列表类型和列表项
+	1.有序列表
+		<ol>
+			<li></li>
+		</ol>
+	2.无序列表
+		<ul>
+			<li></li>
+		</ul>
+	3.自定义列表：多用于图文混排场合
+		<dl>
+		    <dt>列表标题</dt>
+		    <dd>列表项</dd>
+		</dl>
+二、表单
+	<form></form>
+	1、输入框
+		<input>
+	        属性：
+		1.type
+		   值：
+		     1.text：输入文本
+		     2.password：密码框
+		     3.button：按钮
+		     4.submit：提交按钮
+		     5.reset：重置按钮
+		     6.file：上传文件
+		     7.radio：单选按钮
+		     8.checkbox：复选框
+		2.value：写控件的值
+		3.maxlength：设置输入框内容的最大长度
+		4.placeholder:占位符
+		5.name：定义控件的名字
+		6.checked：预选中
+	2、多行文本域
+		<textarea></textarea>
+		属性：
+		1.cols：设置多行文本域的列数，
+			值是数字，没有单位
+		2.rows：设置多行文本域的行数
+			值是数字，没有单位
+
+		3.style="resize:none"
+			取消拉伸效果
+	3、下拉列表
+		<select>
+			<option></option>
+		</select>
+		
+	   select的属性：
+		1.size：值是数字，没有单位
+			当值等于1，为下拉列表
+			当值大于1，为滚动列表，
+			列表显示的项等于值的大
+			小
+		2.multiple：实现多选，没有值的
+		        属性
+	   option的属性：
+		1.selected:预选中,没有值的属性。
+
+
+三、css样式：层叠样式表
+	样式的注释写法：
+		/*注释的内容写中间*/
+
+	样式规则：
+		样式统称1:样式值1;
+		样式统称2:样式值2;
+		样式统称3:样式值3;
+		……
+
+	1.行内样式(内联样式)
+	  <开始标记 style="样式规则">
+	  </结束标记>
+
+	2.内部样式
+	  1.写在head双标记里
+	  2.把style属性当作双标记使用
+	  3.找元素,写样式
+	  4.
+		<head>
+		   <style>
+			元素的名字{
+				样式规则
+			}	
+		   </style>
+		</head>
+	
+	3.外部样式
+
+
+
+
+day5********************************
+一、css的三种写法：
+	样式规则：
+	
+		样式统称:样式值;
+		样式统称:样式值;
+		样式统称:样式值;
+		
+
+	1、行内样式
+	2、内部样式
+	3、外部样式
+		1.新建一个以.css结尾的文件
+		2.通过link标记引入，放在head标记里
+		<head>
+		   <link rel="stylesheet" href="1.css">
+		</head>
+		3.找元素，写样式
+		 元素名字{
+			样式规则
+		 }
+	
+二、css的特点：
+	1、层叠性：
+	2、继承性：
+	3、优先级：就近原则
+
+三、选择器：
+	1、元素选择器：
+	写法：元素名字{样式规则}
+
+	2、id选择器：
+	写法：#元素的名字{样式规则}
+
+	3、class选择器：
+	写法：.元素的名字{样式规则}
+
+	4、通用选择器：
+	写法：*{样式规则}
+
+	5、群组选择器：
+	写法：选择器1,选择器2,选择器3{样式规则}
+
+	6、子代选择器：
+	写法：父元素选择器>子元素选择器{样式规则}
+
+	7、后代选择器：
+	写法：父元素选择器  后代选择器{样式规则}
+
+
+
+
+day7********************************
+一、css：层叠样式表
+	样式规则：
+		样式统称1:样式值1;
+		样式统称2:样式值2;
+		样式统称3:样式值3;
+
+	1.行内样式:
+	  <开始标记 style="样式规则">
+	  </结束标记>
+
+	2.内部样式
+	  <head>
+		<style>
+		     选择器{
+			样式规则
+		     }
+		</style>
+	  </head>
+		
+	3.外部样式
+	  1.新建一个以.css结尾的文件
+	  2.<link rel="stylesheet" href="">
+	  3.
+	    选择器{
+		样式规则
+	    }
+
+二、css的三个特性：
+	1.层叠性：
+	2.继承性：
+	3.优先级：就近原则
+
+三、选择器：找元素
+	1.元素选择器
+	  写法：元素的名字{}
+
+	2.id选择器
+	  写法：#id的值{}
+
+	3.class选择器
+	  写法：.class的值{}
+
+	4.后代选择器
+	  写法：父元素选择器 后代选择器{}
+
+	5.子代选择器
+	  写法：父元素选择器>子代选择器{}
+
+	6.群组选择器
+	  写法：选择器1,选择器2{}
+
+	7.通用选择器
+	  写法：*{}
+
+	8.伪类选择器：
+	    1.动态伪类：
+	      鼠标悬浮：
+	      写法：  选择器:hover{样式规则}
+ 
+            2.链接伪类：
+	      访问前：字体蓝
+	      写法：  选择器:link{样式规则}
+		
+
+	      访问后：字体红
+	      写法：  选择器:visited{样式规则}
+	
+四、css样式：
+	1、尺寸：单位：px(像素)或者%
+		宽：width
+		高：height
+	   注意：
+		1.行内元素除img之外，
+		  都不能加尺寸
+		2.所有的块元素都可以加尺寸
+		3.p标记不能嵌套其他块元素
+	2、边框
+	   四个方向的边框写法：
+	      border:边框的宽度(px) 
+		     边框的样式
+		     (solid/dotted/dashed)
+		     边框的颜色
+		     (透明色:transparent)
+
+	   设置单个方向的边框写法：
+	      border-top:宽度 样式 颜色
+ 	      border-bottom:宽度 样式 颜色
+	      border-left:宽度 样式 颜色
+	      border-right:宽度 样式 颜色
+
+
+
+
+day8********************************
+一、外边距：值就是数字，单位是px或者%
+
+    设置四个方向外边距的写法：
+	margin:一个值(四个方向)
+	margin:上下   左右
+	margin:上  左右  下
+	margin:上  右  下  左(顺时针)
+
+    设置单个方向的外边距写法：
+	margin-top:一个值
+	margin-bottom:一个值
+	margin-left:一个值
+	margin-right:一个值
+
+    自身带外边距的标记：
+      h1,h2,h3,h4,h5,p,pre,hr,ol,ul,dl,dd,body
+
+    特殊情况：
+	1、当两个标记的外边距相遇时，
+	   外边距将会合并成一个，最终距离值，
+	   以最大值为准
+
+	2、块元素：四个方向外边距都可以加
+	   行内元素：上下不能加，左右可以加
+	   行内块元素：四个方向外边距都可以加
+
+	3、给子元素加上外边距的时候，作用到父
+	   元素跟兄弟元素之间
+	     解决办法：
+		1.给父元素加边框
+		2.用父元素的上内边距代替子元素
+		  的上外边距
+
+二、内边距：值就是数字，单位是px或者%
+
+    设置四个方向的内边距写法：
+	padding:一个值(四个方向)
+	padding:上下   左右
+	padding:上  左右  下
+	padding:上  右  下  左
+
+    设置单个方向的内边距写法：
+	padding-top:一个值
+	padding-bottom:一个值
+	padding-left:一个值
+	padding-right:一个值
+
+三、边框倒角：值都是数字，单位px或者%
+
+    设置四个方向的边框倒角：
+    border-radius:一个值
+
+    设置单个方向的边框倒角：
+    border-top-left-radius(左上):一个值
+    border-top-right-radius:(右上)一个值
+    border-bottom-left-radius(左下):一个值
+    border-bottom-right-radius(右下):一个值
+
+四、边框阴影
+    box-shadow:10px 10px 2px 5px red (inset)
+     值：
+	水平方向的偏移距离(单位px,必须写)
+	竖直方向的偏移距离(单位px,必须写)
+	模糊距离(单位px)
+	阴影尺寸(单位px)
+	阴影的颜色
+	内阴影:inset
+
+五、背景
+    
+    背景颜色：
+	background-color
+    背景图片：
+	background-image:url()
+
+
+
+day9********************************
+一、边框
+    border:宽度 
+	   样式(solid/dotted/dashed) 
+	   颜色(transparent)
+
+    border-top:
+    border-bottom:
+    border-left:
+    border-right:
+
+二、边框倒角
+    border-radius:值是数字,单位是px或者%
+
+    border-top-left-radius:
+    border-top-right-radius:
+    border-bottom-right-radius:
+    border-bottom-left-radius:
+
+三、外边距
+    margin:一个值(四个方向)
+
+    margin:上下  左右
+   (margin:0  auto)让块元素居中显示
+
+    margin:上  左右  下
+    margin:上  右  下  左
+
+    margin-top：
+    margin-bottom：
+    margin-left：
+    margin-right：
+
+四、内边距
+    padding:一个值(四个方向)
+    padding:上下  左右
+    padding:上  左右  下
+    padding:上  右  下  左
+
+    padding-top：
+    padding-bottom：
+    padding-left：
+    padding-right：
+
+五、边框阴影
+    box-shadow:水平方向的偏移距离(px)
+	       竖直方向的偏移距离(px)
+	       模糊距离(px)
+	       阴影尺寸(px)
+	       阴影颜色
+	       inset
+
+六、背景
+    背景颜色：background-color
+    背景图片：background-image:url('');
+    背景平铺：background-repeat
+	  值：
+	     1、repeat：默认值,平铺
+	     2、no-repeat：不平铺
+	     3、repeat-x：横向平铺
+	     4、repeat-y：竖向平铺 
+    背景尺寸：background-size
+	  值:
+	     1、width(px或者%) height(px或者%)
+		300px 300px
+	     2、cover：将背景图放大，直到背景
+	        图片将元素的所有区域覆盖完为止
+	     3、contain：将背景图等比放大或者
+	        缩小，直到图片的其中一个边到
+		达元素的边缘为止
+    背景固定：background-attachment
+	  值：
+	     1、scroll
+	     2、fixed
+    背景定位：background-position
+	  值：	
+	     1、水平偏移距离(px或者%)  
+	        竖直偏移距离(px或者%)
+
+	     2、水平(left  center  right)
+	        竖直(top   center  bottom)
+
+    简写方式：
+    background:颜色 图片 平铺 固定 定位
+
+七、文本格式化
+	1、控制字体的样式：
+	   1.字体样式：
+		font-style:normal/italic
+	   2.小型大写字母：
+		font-variant:normal/small-caps
+	   3.字体加粗：
+		font-weight:normal/bold/100~900
+	   4.字体大小：
+		font-size:值是数字，单位px
+	   5.指定字体：
+		font-family:"微软雅黑","宋体","黑体"
+			   :"microsoft yahei","simsun","simhei"
+	  
+	   字体的简写方式：
+	   font:样式 小型大写字母 加粗 大小 指定字体(必须)
+
+	2、控制文本的样式：
+	   1.字体颜色:
+		color:
+	   2.文本的排列方式：
+		text-align:left/center/
+		           right/justify
+	   3.文本的线条修饰：
+		text-decoration:none/underline
+			        line-through/overline
+	   4.行高：
+		line-height:值是数字，单位px
+	   5.首行缩进：
+		text-indent:值是数字，单位px
+	   6.文本阴影：
+		text-shadow:水平偏移距离(px)
+			    竖直偏移距离(px)
+			    模糊距离(px)
+			    阴影颜色
+
+
+
+day10********************************
+一、尺寸：单位是px或者%
+	宽：width
+	高：height
+
+二、边框：
+	border：边框的宽度  
+	        样式(solid/dotted/dashed) 
+		颜色(transparent)
+	
+	border-top:
+	border-bottom:
+	border-left:
+	border-right:
+	
+三、边框倒角：
+	border-radius：
+
+	border-top-left-radius:
+	border-bottom-left-radius:
+	border-top-right-radius:
+	border-bottom-right-radius:
+
+四、边框阴影：
+	box-shadow:水平偏移距离（px）
+		   竖直偏移距离(px)
+		   模糊距离
+		   阴影尺寸
+		   阴影颜色
+		   inset
+	
+五、外边距：
+	margin：一个值(4)
+	margin:上下  左右
+	margin：上  左右  下
+	margin：上 右 下 左
+	
+	margin-top：
+	margin-bottom：
+	margin-left：
+	margin-right：
+
+	1、行内元素：只能加左右外边距
+	2、块元素：四个方向外边距都可以加
+	3、行内块元素：四个方向外边距都可以加
+
+六、内边距：
+	padding：一个值(四个方向)
+	padding：上下  左右
+	padding：上  左右  下
+	padding：上  右  下  左
+
+	padding-top：
+	padding-bottom：
+	padding-left：
+	padding-right：
+
+七、背景：
+	简写：
+	background：color image repeat attachment  position
+		
+	background-image:url()
+
+	background-repeat:repeat/no-repeat/
+			  repeat-x/repeat-y
+
+	background-attachment:fixed/scroll
+
+	background-position:x(px或%)  y(px或%)
+			    x(left  center   right)       
+			    y(top   center   bottom)
+	
+	background-size:cover/contain/
+			100%   100%
+
+八、文本格式化：
+    字体样式简写：
+	font:style variant weight size family（必须）
+	
+	font-style:normal/italic
+	font-variant:normal/small-caps
+	font-weight:normal/bold/100~900
+	font-family:"微软雅黑","宋体","黑体"
+
+    文化格式：
+	color：
+	行高：line-height
+	首行缩进：text-indent
+	文本阴影：水平偏移距离 
+		  竖直偏移距离
+		  模糊距离
+		  颜色
+	排列方式：text-align:left/center/right/justify
+	线条修饰：text-decoration:line-through/overline/underline/none
+
+九、定位：改变元素的默认位置
+	1.普通文档流
+
+	2.浮动定位
+		float:left/right/both
+		1.浮动定位会脱离文档流，
+		  不占据页面的高度
+		2.如果前边没有已浮动元素，
+		  照着父元素的左侧或者右
+		  侧浮动
+
+		  如果前边有已浮动元素，
+		  照着已浮动元素的左侧或者
+		  右侧浮动
+		3.浮动元素排列好之后，没有浮
+		  动的元素上去占位
+		 
+	3.浮动引发的特殊情况：
+		1.图片、文字、行内元素、
+		行内块元素  会采用“环绕”的
+		方式排列，不能被浮动元素压
+		在底下
+
+		2.父元素宽度不够的情况下，
+		 最后一个元素将会换行，或者
+		 被卡住
+
+		3.父元素没有设置高度的情况下，
+		 高度以没有浮动的子元素为准
+
+		4.浮动会让行内元素显示为块元素
+		  可以设置宽高尺寸
+
+	4.解决浮动带来的影响：
+		1.给父元素加高度
+		2.给父元素添加
+		  overflow:hidden/auto
+		3.在受浮动影响的元素中间
+		  加一个空标记，给这个空
+		  标记加一个css样式
+		  clear:left/right/both
+
+十、显示方式：
+	display:
+	值：
+		1.inline:行内
+		2.inline-block:行内块
+		3.block:块
+		4.none:不显示，不占据页面高度
+
+十一、显示效果：
+	1.透明度：取值0~1
+
+	background-color:rgba(0,0,0,0.1)
+
+	background-color:rgb(0,0,0)
+	opacity：取值0~1
+
+	2.cursor:
+	     值：
+		1.default：默认箭头
+		2.pointer：小手
+		3.crosshair：十字
+		4.text：I
+		5.wait：等待，加载
+		6.help：帮助
+
+	3.vertical-align:
+	     值：
+		1.top：上对齐
+		2.middle：中对齐
+		3.bottom：下对齐
+
+
+
+
+
