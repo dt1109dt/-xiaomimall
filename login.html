@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/gg.css">
+  <title>Document</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				background:#f0f0f0;
+			}
+			#login{
+				height:32rem;
+				margin:0 auto;
+				background-image:url(../images/login_bg.jpg);
+				background-repeat:repeat-x;
+				margin-top:1rem;
+			}
+			#denglu{
+				width:380px;
+				height:420px;
+				background:rgba(200,200,200,0.85);
+				position: relative;
+				left:1100px;
+				top:36px;
+			}
+			#denglu>p{
+				font-size:21px;
+				font-family:"华文琥珀";
+			}
+			#denglu p span{
+				font-size:16px;
+				color:orange;
+				position: relative;
+				left:88px;
+			}
+			input{
+				width:260px;
+				height:36px;
+				margin-top:10px;
+				background:#fff;
+			}
+			div{
+				font-size:1rem;
+				color:orange;
+			}
+			#button1{
+				text-align:center;
+				width:10rem;
+				height:2.5rem;
+				background:#27b1f6;
+				color:#fff;
+			  margin-left:6rem;
+				margin-top:2rem
+			}
+			.myif{
+				width:100%;
+			}
+			body{background:#f5f5f5;}
+			#foo1{
+				margin-top:6.3rem;
+			}
+			
+		</style>
+ </head>
+ <body>
+	<header>
+ 	<iframe src="header.html" frameborder="0" class="myif">
+	</iframe>
+	</header>
+ 	<div id="login">
+		<div id="denglu">
+			<p>会员登录
+				<span>还不是会员 立即注册</span>
+			</p>
+			<form action="/login/login" method="post">
+			用户名:<input type="text" placeholder="请输入用户名" name="mingcheng" id="uname"><br>
+			密&nbsp&nbsp&nbsp&nbsp码:<input type="text" placeholder="请输入密码" id="upwd"><br>
+			验证码:<input type="text" placeholder="请输入验证码">
+			<button onclick="getmi()" id="button1" name="button">登录</button>
+			</form>
+		</div>
+	</div>
+		<script>
+				function getmi(){
+						var xhr=new XMLHttpRequest();
+						xhr.onreadystatechange=function(){
+								if(xhr.readyState==4&&xhr.status==200){
+									var result=xhr.resposeText;
+									console.log(result);
+								}
+						}
+						xhr.open("post","/public/login",true;)
+						var formdata="uname="+uname.value+"upwd="+upwd.value+"email="+email.value+"phone="+phone.value;
+						xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+						xhr.send(formdata);
+				}
+		</script>
+		<footer>
+			<iframe src="footer.html" frameborder="0" class="myif" id="foo1"></iframe>
+		</footer>
+  
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

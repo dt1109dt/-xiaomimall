@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+	<link rel="stylesheet" href="css/gg.css">
+	<link rel="stylesheet" href="css/register.css">
+  <title>Document</title>
+	<style>
+		body{
+			background:#f0f0f0;
+		}
+		#register{
+			background:#fff;
+			margin-left:60rem;
+			margin-right:15rem;
+			height:28rem;
+		}
+		#formheader{
+			display:flex;
+			position:relative;
+		}
+		.inp_r{
+			    font:16px Times New Roman;
+					height:60px;
+					line-height: 60px;
+					margin:0;
+					vertical-align:middle;
+					
+		}
+		.footer{
+			margin-top:11.5rem;
+		}
+		.my_size{
+			position:absolute;
+			left:36rem;
+			color:#ff9700;
+		}
+		#zhuceinput{
+			padding: 10px 0;
+    padding-left: 45px;
+		}
+		#zhuceinput .usname{
+			font:16px Times New Roman;
+			height:40px;
+			line-height:40px;
+			margin:20px 0;
+			width:19rem;
+			text-align:right;
+		}
+		@media (max-width:768px){
+			.formheader{width:5rem;font-size:1rem;}
+			.zhuceinput{padding:0;}
+			#zhuceinput .usname{
+				font: 4px Times New Roman;
+				height: 18px;
+				line-height: 18px;
+				margin: 5px 0;
+				width:19rem;
+				text-align:right;
+			}
+		}
+		#zhuceinput .usname .kuang{
+			width: 220px;
+    height: 30px;
+    border: 1px solid #ccc;
+		background:#f0f0f0;
+		}
+		.myp_size{
+			color:#ff9700;
+			font-family:华文琥珀;
+		}
+		.my_img1{
+			width:15rem;
+			height:8rem;
+			position:relative;
+			left:16rem;
+			top:-12rem;
+			clear:both;
+		}
+		.button_1{
+			width:8rem;
+			height:2.5rem;
+			background:#0aa1ed;
+		}
+		.img_2{
+			height:30rem;
+			position:relative;
+			top:-28rem;
+		}
+		#left_img{
+			height:0rem;
+		}
+	</style>
+ </head>
+ <body>
+  <header>
+		<iframe src="header.html" frameborder="0" scrolling="no" class="myif">
+		</iframe>
+	</header>
+	<div id="register">
+		<div id="form">
+			<form action="/register/register" method="post">
+				<div id="formheader">
+				<p class="myp_size">会员注册
+				</p>
+				<span class="my_size">小米商城
+				</span>
+				</div>
+				<div id="zhuceinput">
+					<div class="usname">
+						用&nbsp&nbsp户&nbsp&nbsp名:<input type="text" placeholder="请输入用户名" name="usename" class="kuang">
+					</div>
+					<div class="usname">
+						密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码:<input type="password" placeholder="请输入密码" name="upwd" class="kuang">
+					</div>
+					<div class="usname">
+						邮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp箱:<input type="text" placeholder="请确认邮箱" name="reepassword" class="kuang">
+					</div>
+					<div class="usname">
+						手&nbsp机&nbsp号:<input type="text" placeholder="请确认手机号" name="phone" class="kuang">
+					</div>
+					<div class="usname">
+						<div class="left">
+						验&nbsp证&nbsp码:<input type="text" placeholder="请输入验证码" class="kuang" name="username">
+						</div>
+						<div class="right">
+						<img src="../images/yanzhengma.jpg" alt="">
+						</div>
+						<input type="button" value="登录" class="button_1" onclick="getmi2()" name="input">
+						<table></table>
+						<img src="../images/pinghengche.jpg" alt="" class="my_img1">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="left_img">
+		<img src="../images/xiaomiMIX3.jpg" alt="" class="img_2">
+	</div>
+	<script>
+		function getmi2(){
+				var xhr=new XMLHTTPRequest();
+				xhr.openreadystatechange=function(){
+						if(xhr.readyState==4&&xhr.status==200)
+						{
+								var result=xhr.resposeText;
+								console.log(result);
+						}
+				}
+				xhr.open("post","/puclic/register",true);
+				var formdata="uname="+uname.value+"upwd="+upwd.value+"email="+email.value+"phone="+phone.value;
+				xhr.setRequestHeader("Contenmt-type","application/x-www-form-urlencoded");
+				xhr.send(formdata);
+		}
+	</script>
+	<footer class="footer">
+		<iframe src="footer.html" frameborder="0" class="myif" scrolling="no">
+		</iframe>
+	</footer>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

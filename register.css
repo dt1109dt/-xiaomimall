@@ -1,0 +1,87 @@
+.myif{
+	width:100%;
+}
+body{
+			background:#f0f0f0;
+		}
+		#register{
+			background:#fff;
+			margin-left:60rem;
+			margin-right:15rem;
+			height:28rem;
+		}
+		#formheader{
+			display:flex;
+			position:relative;
+		}
+		.inp_r{
+			    font:16px Times New Roman;
+					height:60px;
+					line-height: 60px;
+					margin:0;
+					vertical-align:middle;
+					
+		}
+		.footer{
+			margin-top:11.5rem;
+		}
+		.my_size{
+			position:absolute;
+			left:36rem;
+			color:#ff9700;
+		}
+		#zhuceinput{
+			padding: 10px 0;
+    padding-left: 45px;
+		}
+		#zhuceinput .usname{
+			font:16px Times New Roman;
+			height:40px;
+			line-height:40px;
+			margin:20px 0;
+			width:19rem;
+			text-align:right;
+		}
+		@media (max-width:768px){
+			.formheader{width:5rem;font-size:1rem;}
+			.zhuceinput{padding:0;}
+			#zhuceinput .usname{
+				font: 4px Times New Roman;
+				height: 18px;
+				line-height: 18px;
+				margin: 5px 0;
+				width:19rem;
+				text-align:right;
+			}
+		}
+		#zhuceinput .usname .kuang{
+			width: 220px;
+    height: 30px;
+    border: 1px solid #ccc;
+		background:#f0f0f0;
+		}
+		.myp_size{
+			color:#ff9700;
+			font-family:华文琥珀;
+		}
+		.my_img1{
+			width:15rem;
+			height:8rem;
+			position:relative;
+			left:16rem;
+			top:-12rem;
+			clear:both;
+		}
+		.button_1{
+			width:8rem;
+			height:2.5rem;
+			background:#0aa1ed;
+		}
+		.img_2{
+			height:30rem;
+			position:relative;
+			top:-28rem;
+		}
+		#left_img{
+			height:0rem;
+		}

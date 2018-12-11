@@ -1,0 +1,53 @@
+*{
+				margin:0;
+				padding:0;
+			}
+			#login{
+				height:32rem;
+				margin:0 auto;
+				background-image:url(../images/login_bg.jpg);
+				background-repeat:repeat-x;
+				margin-top:1rem;
+			}
+			#denglu{
+				width:380px;
+				height:420px;
+				background:rgba(200,200,200,0.85);
+				position: relative;
+				left:1100px;
+				top:36px;
+			}
+			#denglu>p{
+				font-size:21px;
+				font-family:"华文琥珀";
+			}
+			#denglu p span{
+				font-size:16px;
+				color:orange;
+				position: relative;
+				left:88px;
+			}
+			input{
+				width:260px;
+				height:36px;
+				margin-top:10px;
+				background:#fff;
+			}
+			div{
+				font-size:1rem;
+				color:orange;
+			}
+			#button1{
+				text-align:center;
+				width:10rem;
+				height:2.5rem;
+				background:#27b1f6;
+				color:#fff;
+			  margin-left:6rem;
+				margin-top:2rem
+			}
+			.myif{
+				width:100%;
+			}
+			body{background:#f5f5f5;}
+			
